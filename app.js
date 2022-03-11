@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const users = require("./routes/users"); // impor users route
+
 require("dotenv").config();
 
 const app = express();
@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use("/users", users);
+app.use("/users", require("./routes/users"));
 
 // log any error caused when connect to database
 main().catch((err) => console.log(err));

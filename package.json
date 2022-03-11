@@ -1,12 +1,19 @@
 {
-  "name": "session5-source-code",
+  "name": "ep22-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Last session",
   "main": "app.js",
   "scripts": {
-    "start": "npx nodemon app"
+    "start": "node app",
+    "dev-start": "npx nodemon app"
   },
-  "author": "AR",
+  "authors": [
+    "AR",
+    "Ahmed",
+    "Abdullah",
+    "Mahmoud",
+    "Hossam"
+  ],
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
