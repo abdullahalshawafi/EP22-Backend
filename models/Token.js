@@ -1,8 +1,8 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model, types } = require("mongoose");
 
 const tokenSchema = new Schema({
-  username: {
-    type: String,
+  userId: {
+    type: Schema.Types.ObjectId,
     required: true,
   },
   token: {

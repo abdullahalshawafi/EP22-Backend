@@ -1,6 +1,6 @@
 module.exports = function (req, res, next) {
-  if (req.params.username !== req.payload.username) {
-    return res.status(403).json({ error: "This is out of your business" });
+  if (req.params.id !== req.userId) {
+    return res.status(403).json({ error: "You can't view other users data" });
   }
 
   next();
