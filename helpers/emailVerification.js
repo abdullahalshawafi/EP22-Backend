@@ -1,6 +1,6 @@
 const crypto = require("crypto");
 const Token = require("../models/Token");
-const sendMail = require("./mailer");
+const mailer = require("./mailer");
 
 module.exports = async function (user) {
   let token = crypto.randomBytes(32).toString("hex");
@@ -9,7 +9,7 @@ module.exports = async function (user) {
 
   const link = `${process.env.BASE_URL}/auth/verify/${token.token}/${user._id}`;
 
-  await sendMail(
+  await mailer(
     user.email,
     "Email Verification",
     `Welcome to our collage system\nPlease verify your email via the following link:\n${link}`
