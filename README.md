@@ -25,7 +25,7 @@ of Energia Powered Season 2022.
 
 4. Copy `.env.example` file into a `.env` file and write your environment variables in it.
 
-5. Import `College System.postman_collection.json` file in postman to test the REST API.
+5. Import `College System.postman_collection.json` file in Postman to test the REST API.
 
 6. Run the development server using `npm run dev-start`.
 
