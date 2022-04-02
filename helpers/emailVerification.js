@@ -12,7 +12,7 @@ module.exports = async function (user) {
   await mailer(
     user.email,
     "Email Verification",
-    `Welcome to our collage system\nPlease verify your email via the following link:\n${link}`
+    `Welcome to our college system\nPlease verify your email via the following link:\n${link}`
   );
 
   await token.save();

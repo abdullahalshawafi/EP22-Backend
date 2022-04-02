@@ -26,7 +26,7 @@ async function db() {
 }
 
 app.get("/", (req, res) => {
-  res.send("Welcome to our Collage System API");
+  res.send("Welcome to our College System API");
 });
 
 app.listen(PORT, () => {

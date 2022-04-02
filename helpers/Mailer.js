@@ -12,7 +12,7 @@ module.exports = async function (to, title, msg) {
   });
 
   await transporter.sendMail({
-    from: "Collage System <collage.system@edu.eg>",
+    from: "College System <college.system@edu.eg>",
     to: to,
     subject: title,
     text: msg,
